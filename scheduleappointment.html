@@ -66,7 +66,7 @@
                <ul class="nav navbar-nav navbar-right">
                   <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="fa fa-user"></i> Prashanth Jayavaradhan<!-- USER --> <b class="caret"></b>
+                        <i class="fa fa-user::before"></i> John Smith<!-- USER --> <b class="caret"></b>
                      </a>
                      <ul class="dropdown-menu">
                         <!-- PATIENTS -->
@@ -86,7 +86,7 @@
                   <li class='inactive'><a href='/home.aspx' >Home</a></li>
                   <li class='inactive'><a href='/Profile.aspx' >Profile</a></li>
                   <li class='inactive'><a href='/clearances.aspx' >Medical Clearances</a></li>
-                  <li class='active'><a href='/appointments_home.aspx' >Appointments</a></li>
+                  <li class='active'><a href='Home.html' >Appointments</a></li>
                   <li class='inactive'><a href='/rosters.aspx' >Groups/Workshops</a></li>
                   <li class='inactive'><a href='/referrals.aspx' >Referrals</a></li>
                   <li class='inactive'><a href='/Handouts.aspx' >Handouts</a></li>
@@ -102,7 +102,7 @@
                   <li>
                      <hr style='margin: 10px;'/>
                   </li>
-                  <li class='inactive'><a href='/logout.aspx'><i class='fa fa-sign-out'></i> Log Out</a></li>
+                  <li class='inactive'><a href='/logout.aspx'><i class='fa fa-sign-out::before'></i> Log Out</a></li>
                </ul>
                <!-- NAV -->
             </div>
@@ -119,10 +119,53 @@
                   </div>
                   
                   <span>
-                     <h1>Appointments for Prashanth Jayavaradhan</h1>
+                     <h1>Appointments for John Smith</h1>
                       <br />
                   </span>
-                   <h2>Insert Appointment Scheduling here --> To be Done</h2>
+                   <table style="color: black">
+                       <caption><h4 style="color: black" ><b>Create a new appointment</b></h4></caption>
+                       <thead>
+      <tr>
+          <Th class = "select" style="padding-right: 0.5em">Reason</Th>   
+    <TD ALIGN="center" style="padding-right: 3em">
+    <select>        
+            <option value="0">Select an Option</option>
+            <option value="a">Mental health</option>
+            <option value="b">Vaccination</option>
+            <option value="c">Dental</option>
+            <option value="d">Cardiology</option>
+    </select>
+    </TD>  
+          
+    <Th class = "select" style="padding-right: 0.5em">Healthcare Provider Name</Th>   
+    <TD ALIGN="center" style="padding-right: 3em" >
+    <select >        
+            <option value="0">Select an Option</option>
+            <option value="a">Pierce Martin</option>
+            <option value="b">Skye Florentino</option>
+            <option value="c">Paul Kussmann</option>
+            <option value="d">Jared Lipman</option>
+    </select>
+
+    </TD>  
+        <th style="padding-right: 0.5em">Date</th>
+          <td style="padding-right: 3em"><input type="date"></td>
+        <th style="padding-right: 0.5em">Online</th>
+          <td> <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></td>
+        <td> <p><a href="" class="btn btn-primary btn-sm" style="width: 5em;">Search</a></p></td>
+        
+      </tr>
+   </thead>
+                   </table>
+                   <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/prashanthjayavaradhan/60min" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<!-- Calendly inline widget end -->
+
+                  
                   <!-- BODY -->
             </div>
          </div>
